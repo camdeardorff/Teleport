@@ -1,0 +1,747 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		150D194724AA37B700E38DF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D194624AA37B700E38DF2 /* AppDelegate.swift */; };
+		150D194924AA37B700E38DF2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D194824AA37B700E38DF2 /* ContentView.swift */; };
+		150D194B24AA37BF00E38DF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 150D194A24AA37BF00E38DF2 /* Assets.xcassets */; };
+		150D194E24AA37BF00E38DF2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 150D194D24AA37BF00E38DF2 /* Preview Assets.xcassets */; };
+		150D195124AA37BF00E38DF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 150D194F24AA37BF00E38DF2 /* Main.storyboard */; };
+		150D195D24AA37BF00E38DF2 /* Location_BuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D195C24AA37BF00E38DF2 /* Location_BuddyTests.swift */; };
+		150D197724AA3E1D00E38DF2 /* PathType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D197624AA3E1D00E38DF2 /* PathType.swift */; };
+		1534663624B61EF600102A7A /* SystemNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534663524B61EF600102A7A /* SystemNotification.swift */; };
+		1534663824B6227800102A7A /* Simulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534663724B6227800102A7A /* Simulator.swift */; };
+		153E47DB250C54C400EAED7C /* gpx.png in Resources */ = {isa = PBXBuildFile; fileRef = 153E47DA250C54C400EAED7C /* gpx.png */; };
+		153FE0CC250D17A700254C9E /* SimulatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153FE0CB250D17A700254C9E /* SimulatorController.swift */; };
+		153FE0CE250D198500254C9E /* PathsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153FE0CD250D198500254C9E /* PathsViewModel.swift */; };
+		153FE0D0250D1A8300254C9E /* PathProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153FE0CF250D1A8300254C9E /* PathProvider.swift */; };
+		15442C2B24AD2A0D004570F8 /* NavigationPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15442C2A24AD2A0D004570F8 /* NavigationPrimary.swift */; };
+		15442C2D24AD2B86004570F8 /* PathList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15442C2C24AD2B86004570F8 /* PathList.swift */; };
+		15442C2F24AD2BFC004570F8 /* PathRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15442C2E24AD2BFC004570F8 /* PathRow.swift */; };
+		15442C3124AD3430004570F8 /* NavigationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15442C3024AD3430004570F8 /* NavigationDetail.swift */; };
+		15442C3324AD34A6004570F8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15442C3224AD34A6004570F8 /* MapView.swift */; };
+		15442C3724AD3C87004570F8 /* PlayBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15442C3624AD3C87004570F8 /* PlayBar.swift */; };
+		15442C3A24AD5223004570F8 /* CoordinateFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15442C3924AD5223004570F8 /* CoordinateFrame.swift */; };
+		15442C3C24AE8549004570F8 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15442C3B24AE8549004570F8 /* SearchBar.swift */; };
+		15442C4424AEA933004570F8 /* hood.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 15442C4024AEA933004570F8 /* hood.gpx */; };
+		15442C4524AEA933004570F8 /* whitney.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 15442C4124AEA933004570F8 /* whitney.gpx */; };
+		15442C4624AEA933004570F8 /* rain.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 15442C4224AEA933004570F8 /* rain.gpx */; };
+		15442C4724AEA933004570F8 /* long.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 15442C4324AEA933004570F8 /* long.gpx */; };
+		15442C4924AEAA17004570F8 /* bros.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 15442C4824AEAA17004570F8 /* bros.gpx */; };
+		15509EFA24C2199200F23C93 /* MapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15509EF924C2199200F23C93 /* MapCoordinator.swift */; };
+		155DFD3724B678C7004DB01E /* RepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155DFD3624B678C7004DB01E /* RepeatingTimer.swift */; };
+		158B9D8424AFDD5900125A33 /* CoreGPX-extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158B9D8324AFDD5900125A33 /* CoreGPX-extensions.swift */; };
+		158B9D8624AFF1D100125A33 /* GPXFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158B9D8524AFF1D100125A33 /* GPXFile.swift */; };
+		158B9D8824B1620C00125A33 /* PathSimulationPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158B9D8724B1620C00125A33 /* PathSimulationPlayer.swift */; };
+		15BBD845250D6C53001C3AB7 /* GPXFilesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BBD844250D6C53001C3AB7 /* GPXFilesController.swift */; };
+		15DE8B9F24CF40830084B421 /* PlaySpeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DE8B9E24CF40830084B421 /* PlaySpeed.swift */; };
+		15DE8BA124CF40AE0084B421 /* PlayState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DE8BA024CF40AE0084B421 /* PlayState.swift */; };
+		81AC768699FF7549555FE216 /* Pods_Teleport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CCADBF86192F7037C82D85B /* Pods_Teleport.framework */; };
+		9A5C0C70F9E25A4D35CA1B39 /* Pods_TeleportTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011BC5EAAF925EA6F910FA44 /* Pods_TeleportTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		150D195924AA37BF00E38DF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 150D193B24AA37B700E38DF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 150D194224AA37B700E38DF2;
+			remoteInfo = Teleport;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		011BC5EAAF925EA6F910FA44 /* Pods_TeleportTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeleportTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		150D194324AA37B700E38DF2 /* Teleport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teleport.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		150D194624AA37B700E38DF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		150D194824AA37B700E38DF2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		150D194A24AA37BF00E38DF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		150D194D24AA37BF00E38DF2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		150D195024AA37BF00E38DF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		150D195224AA37BF00E38DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		150D195324AA37BF00E38DF2 /* Teleport.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Teleport.entitlements; sourceTree = "<group>"; };
+		150D195824AA37BF00E38DF2 /* TeleportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeleportTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		150D195C24AA37BF00E38DF2 /* Location_BuddyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location_BuddyTests.swift; sourceTree = "<group>"; };
+		150D195E24AA37BF00E38DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		150D197624AA3E1D00E38DF2 /* PathType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathType.swift; sourceTree = "<group>"; };
+		1534663524B61EF600102A7A /* SystemNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemNotification.swift; sourceTree = "<group>"; };
+		1534663724B6227800102A7A /* Simulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulator.swift; sourceTree = "<group>"; };
+		153E47DA250C54C400EAED7C /* gpx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gpx.png; sourceTree = "<group>"; };
+		153FE0CB250D17A700254C9E /* SimulatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorController.swift; sourceTree = "<group>"; };
+		153FE0CD250D198500254C9E /* PathsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathsViewModel.swift; sourceTree = "<group>"; };
+		153FE0CF250D1A8300254C9E /* PathProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathProvider.swift; sourceTree = "<group>"; };
+		15442C2A24AD2A0D004570F8 /* NavigationPrimary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPrimary.swift; sourceTree = "<group>"; };
+		15442C2C24AD2B86004570F8 /* PathList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathList.swift; sourceTree = "<group>"; };
+		15442C2E24AD2BFC004570F8 /* PathRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathRow.swift; sourceTree = "<group>"; };
+		15442C3024AD3430004570F8 /* NavigationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDetail.swift; sourceTree = "<group>"; };
+		15442C3224AD34A6004570F8 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		15442C3624AD3C87004570F8 /* PlayBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayBar.swift; sourceTree = "<group>"; };
+		15442C3924AD5223004570F8 /* CoordinateFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateFrame.swift; sourceTree = "<group>"; };
+		15442C3B24AE8549004570F8 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		15442C4024AEA933004570F8 /* hood.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = hood.gpx; sourceTree = "<group>"; };
+		15442C4124AEA933004570F8 /* whitney.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = whitney.gpx; sourceTree = "<group>"; };
+		15442C4224AEA933004570F8 /* rain.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = rain.gpx; sourceTree = "<group>"; };
+		15442C4324AEA933004570F8 /* long.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = long.gpx; sourceTree = "<group>"; };
+		15442C4824AEAA17004570F8 /* bros.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bros.gpx; sourceTree = "<group>"; };
+		15509EF924C2199200F23C93 /* MapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCoordinator.swift; sourceTree = "<group>"; };
+		155DFD3624B678C7004DB01E /* RepeatingTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingTimer.swift; sourceTree = "<group>"; };
+		158B9D8324AFDD5900125A33 /* CoreGPX-extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreGPX-extensions.swift"; sourceTree = "<group>"; };
+		158B9D8524AFF1D100125A33 /* GPXFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXFile.swift; sourceTree = "<group>"; };
+		158B9D8724B1620C00125A33 /* PathSimulationPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathSimulationPlayer.swift; sourceTree = "<group>"; };
+		15BBD844250D6C53001C3AB7 /* GPXFilesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXFilesController.swift; sourceTree = "<group>"; };
+		15DE8B9E24CF40830084B421 /* PlaySpeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySpeed.swift; sourceTree = "<group>"; };
+		15DE8BA024CF40AE0084B421 /* PlayState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayState.swift; sourceTree = "<group>"; };
+		7A88AAFF0586BF299C3FF345 /* Pods-TeleportTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeleportTests.debug.xcconfig"; path = "Target Support Files/Pods-TeleportTests/Pods-TeleportTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8CCADBF86192F7037C82D85B /* Pods_Teleport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teleport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0BA2D78CEEC65DEC2F24444 /* Pods-TeleportTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeleportTests.release.xcconfig"; path = "Target Support Files/Pods-TeleportTests/Pods-TeleportTests.release.xcconfig"; sourceTree = "<group>"; };
+		BC2D097D5C0A998E4DD847DE /* Pods-Teleport.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teleport.release.xcconfig"; path = "Target Support Files/Pods-Teleport/Pods-Teleport.release.xcconfig"; sourceTree = "<group>"; };
+		FC477341042D724FC33E3F34 /* Pods-Teleport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teleport.debug.xcconfig"; path = "Target Support Files/Pods-Teleport/Pods-Teleport.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		150D194024AA37B700E38DF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AC768699FF7549555FE216 /* Pods_Teleport.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		150D195524AA37BF00E38DF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A5C0C70F9E25A4D35CA1B39 /* Pods_TeleportTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F462D1CE6B77E47DDB0D61D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CCADBF86192F7037C82D85B /* Pods_Teleport.framework */,
+				011BC5EAAF925EA6F910FA44 /* Pods_TeleportTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		150D193A24AA37B700E38DF2 = {
+			isa = PBXGroup;
+			children = (
+				150D194524AA37B700E38DF2 /* Teleport */,
+				150D195B24AA37BF00E38DF2 /* TeleportTests */,
+				150D194424AA37B700E38DF2 /* Products */,
+				EC44B99B8677B2DC05539965 /* Pods */,
+				0F462D1CE6B77E47DDB0D61D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		150D194424AA37B700E38DF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				150D194324AA37B700E38DF2 /* Teleport.app */,
+				150D195824AA37BF00E38DF2 /* TeleportTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		150D194524AA37B700E38DF2 /* Teleport */ = {
+			isa = PBXGroup;
+			children = (
+				15442C3824AD5213004570F8 /* Helpers */,
+				15442C2824AD29F2004570F8 /* Views */,
+				150D197524AA382300E38DF2 /* Models */,
+				15442C3F24AEA8F6004570F8 /* Data */,
+				150D194624AA37B700E38DF2 /* AppDelegate.swift */,
+				150D194824AA37B700E38DF2 /* ContentView.swift */,
+				150D194A24AA37BF00E38DF2 /* Assets.xcassets */,
+				150D194F24AA37BF00E38DF2 /* Main.storyboard */,
+				150D195224AA37BF00E38DF2 /* Info.plist */,
+				153E47DA250C54C400EAED7C /* gpx.png */,
+				150D195324AA37BF00E38DF2 /* Teleport.entitlements */,
+				150D194C24AA37BF00E38DF2 /* Preview Content */,
+			);
+			path = Teleport;
+			sourceTree = "<group>";
+		};
+		150D194C24AA37BF00E38DF2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				150D194D24AA37BF00E38DF2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		150D195B24AA37BF00E38DF2 /* TeleportTests */ = {
+			isa = PBXGroup;
+			children = (
+				150D195C24AA37BF00E38DF2 /* Location_BuddyTests.swift */,
+				150D195E24AA37BF00E38DF2 /* Info.plist */,
+			);
+			path = TeleportTests;
+			sourceTree = "<group>";
+		};
+		150D197524AA382300E38DF2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1534663724B6227800102A7A /* Simulator.swift */,
+				150D197624AA3E1D00E38DF2 /* PathType.swift */,
+				158B9D8524AFF1D100125A33 /* GPXFile.swift */,
+				158B9D8724B1620C00125A33 /* PathSimulationPlayer.swift */,
+				15DE8B9E24CF40830084B421 /* PlaySpeed.swift */,
+				15DE8BA024CF40AE0084B421 /* PlayState.swift */,
+				153FE0CD250D198500254C9E /* PathsViewModel.swift */,
+				153FE0CF250D1A8300254C9E /* PathProvider.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		15442C2824AD29F2004570F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				15509EF824C2197C00F23C93 /* Map */,
+				15442C2924AD29FB004570F8 /* Navigation */,
+				15442C2C24AD2B86004570F8 /* PathList.swift */,
+				15442C2E24AD2BFC004570F8 /* PathRow.swift */,
+				15442C3624AD3C87004570F8 /* PlayBar.swift */,
+				15442C3B24AE8549004570F8 /* SearchBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		15442C2924AD29FB004570F8 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				15442C2A24AD2A0D004570F8 /* NavigationPrimary.swift */,
+				15442C3024AD3430004570F8 /* NavigationDetail.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		15442C3824AD5213004570F8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				15442C3924AD5223004570F8 /* CoordinateFrame.swift */,
+				158B9D8324AFDD5900125A33 /* CoreGPX-extensions.swift */,
+				1534663524B61EF600102A7A /* SystemNotification.swift */,
+				153FE0CB250D17A700254C9E /* SimulatorController.swift */,
+				155DFD3624B678C7004DB01E /* RepeatingTimer.swift */,
+				15BBD844250D6C53001C3AB7 /* GPXFilesController.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		15442C3F24AEA8F6004570F8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				15442C4824AEAA17004570F8 /* bros.gpx */,
+				15442C4024AEA933004570F8 /* hood.gpx */,
+				15442C4324AEA933004570F8 /* long.gpx */,
+				15442C4224AEA933004570F8 /* rain.gpx */,
+				15442C4124AEA933004570F8 /* whitney.gpx */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		15509EF824C2197C00F23C93 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				15442C3224AD34A6004570F8 /* MapView.swift */,
+				15509EF924C2199200F23C93 /* MapCoordinator.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		EC44B99B8677B2DC05539965 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC477341042D724FC33E3F34 /* Pods-Teleport.debug.xcconfig */,
+				BC2D097D5C0A998E4DD847DE /* Pods-Teleport.release.xcconfig */,
+				7A88AAFF0586BF299C3FF345 /* Pods-TeleportTests.debug.xcconfig */,
+				B0BA2D78CEEC65DEC2F24444 /* Pods-TeleportTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		150D194224AA37B700E38DF2 /* Teleport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 150D196C24AA37BF00E38DF2 /* Build configuration list for PBXNativeTarget "Teleport" */;
+			buildPhases = (
+				096BA694D6922312AFE1DF76 /* [CP] Check Pods Manifest.lock */,
+				150D193F24AA37B700E38DF2 /* Sources */,
+				150D194024AA37B700E38DF2 /* Frameworks */,
+				150D194124AA37B700E38DF2 /* Resources */,
+				58700138D7D76272592642B4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Teleport;
+			productName = Teleport;
+			productReference = 150D194324AA37B700E38DF2 /* Teleport.app */;
+			productType = "com.apple.product-type.application";
+		};
+		150D195724AA37BF00E38DF2 /* TeleportTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 150D196F24AA37BF00E38DF2 /* Build configuration list for PBXNativeTarget "TeleportTests" */;
+			buildPhases = (
+				531C0371154244DC3E15DD36 /* [CP] Check Pods Manifest.lock */,
+				150D195424AA37BF00E38DF2 /* Sources */,
+				150D195524AA37BF00E38DF2 /* Frameworks */,
+				150D195624AA37BF00E38DF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				150D195A24AA37BF00E38DF2 /* PBXTargetDependency */,
+			);
+			name = TeleportTests;
+			productName = TeleportTests;
+			productReference = 150D195824AA37BF00E38DF2 /* TeleportTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		150D193B24AA37B700E38DF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					150D194224AA37B700E38DF2 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					150D195724AA37BF00E38DF2 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 150D194224AA37B700E38DF2;
+					};
+				};
+			};
+			buildConfigurationList = 150D193E24AA37B700E38DF2 /* Build configuration list for PBXProject "Teleport" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 150D193A24AA37B700E38DF2;
+			productRefGroup = 150D194424AA37B700E38DF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				150D194224AA37B700E38DF2 /* Teleport */,
+				150D195724AA37BF00E38DF2 /* TeleportTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		150D194124AA37B700E38DF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				150D195124AA37BF00E38DF2 /* Main.storyboard in Resources */,
+				150D194E24AA37BF00E38DF2 /* Preview Assets.xcassets in Resources */,
+				150D194B24AA37BF00E38DF2 /* Assets.xcassets in Resources */,
+				15442C4924AEAA17004570F8 /* bros.gpx in Resources */,
+				15442C4524AEA933004570F8 /* whitney.gpx in Resources */,
+				15442C4724AEA933004570F8 /* long.gpx in Resources */,
+				15442C4424AEA933004570F8 /* hood.gpx in Resources */,
+				15442C4624AEA933004570F8 /* rain.gpx in Resources */,
+				153E47DB250C54C400EAED7C /* gpx.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		150D195624AA37BF00E38DF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		096BA694D6922312AFE1DF76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Teleport-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		531C0371154244DC3E15DD36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TeleportTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58700138D7D76272592642B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Teleport/Pods-Teleport-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Teleport/Pods-Teleport-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Teleport/Pods-Teleport-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		150D193F24AA37B700E38DF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15442C3C24AE8549004570F8 /* SearchBar.swift in Sources */,
+				15442C3124AD3430004570F8 /* NavigationDetail.swift in Sources */,
+				158B9D8624AFF1D100125A33 /* GPXFile.swift in Sources */,
+				158B9D8424AFDD5900125A33 /* CoreGPX-extensions.swift in Sources */,
+				15442C3324AD34A6004570F8 /* MapView.swift in Sources */,
+				150D197724AA3E1D00E38DF2 /* PathType.swift in Sources */,
+				15442C2D24AD2B86004570F8 /* PathList.swift in Sources */,
+				153FE0CE250D198500254C9E /* PathsViewModel.swift in Sources */,
+				158B9D8824B1620C00125A33 /* PathSimulationPlayer.swift in Sources */,
+				15BBD845250D6C53001C3AB7 /* GPXFilesController.swift in Sources */,
+				15442C3A24AD5223004570F8 /* CoordinateFrame.swift in Sources */,
+				150D194924AA37B700E38DF2 /* ContentView.swift in Sources */,
+				1534663824B6227800102A7A /* Simulator.swift in Sources */,
+				15442C2B24AD2A0D004570F8 /* NavigationPrimary.swift in Sources */,
+				15509EFA24C2199200F23C93 /* MapCoordinator.swift in Sources */,
+				155DFD3724B678C7004DB01E /* RepeatingTimer.swift in Sources */,
+				15442C3724AD3C87004570F8 /* PlayBar.swift in Sources */,
+				15442C2F24AD2BFC004570F8 /* PathRow.swift in Sources */,
+				15DE8B9F24CF40830084B421 /* PlaySpeed.swift in Sources */,
+				150D194724AA37B700E38DF2 /* AppDelegate.swift in Sources */,
+				15DE8BA124CF40AE0084B421 /* PlayState.swift in Sources */,
+				153FE0D0250D1A8300254C9E /* PathProvider.swift in Sources */,
+				153FE0CC250D17A700254C9E /* SimulatorController.swift in Sources */,
+				1534663624B61EF600102A7A /* SystemNotification.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		150D195424AA37BF00E38DF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				150D195D24AA37BF00E38DF2 /* Location_BuddyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		150D195A24AA37BF00E38DF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 150D194224AA37B700E38DF2 /* Teleport */;
+			targetProxy = 150D195924AA37BF00E38DF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		150D194F24AA37BF00E38DF2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				150D195024AA37BF00E38DF2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		150D196A24AA37BF00E38DF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		150D196B24AA37BF00E38DF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		150D196D24AA37BF00E38DF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC477341042D724FC33E3F34 /* Pods-Teleport.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Teleport/Teleport.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Teleport/Preview Content\"";
+				DEVELOPMENT_TEAM = CU74U85Q8E;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Teleport/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.camdeardorff.Teleport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		150D196E24AA37BF00E38DF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC2D097D5C0A998E4DD847DE /* Pods-Teleport.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Teleport/Teleport.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Teleport/Preview Content\"";
+				DEVELOPMENT_TEAM = CU74U85Q8E;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Teleport/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.camdeardorff.Teleport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		150D197024AA37BF00E38DF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A88AAFF0586BF299C3FF345 /* Pods-TeleportTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = V2J539W4TS;
+				INFOPLIST_FILE = TeleportTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.camdeardorff.TeleportTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Teleport.app/Contents/MacOS/Teleport";
+			};
+			name = Debug;
+		};
+		150D197124AA37BF00E38DF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0BA2D78CEEC65DEC2F24444 /* Pods-TeleportTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = V2J539W4TS;
+				INFOPLIST_FILE = TeleportTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.camdeardorff.TeleportTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Teleport.app/Contents/MacOS/Teleport";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		150D193E24AA37B700E38DF2 /* Build configuration list for PBXProject "Teleport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				150D196A24AA37BF00E38DF2 /* Debug */,
+				150D196B24AA37BF00E38DF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		150D196C24AA37BF00E38DF2 /* Build configuration list for PBXNativeTarget "Teleport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				150D196D24AA37BF00E38DF2 /* Debug */,
+				150D196E24AA37BF00E38DF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		150D196F24AA37BF00E38DF2 /* Build configuration list for PBXNativeTarget "TeleportTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				150D197024AA37BF00E38DF2 /* Debug */,
+				150D197124AA37BF00E38DF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 150D193B24AA37B700E38DF2 /* Project object */;
+}
