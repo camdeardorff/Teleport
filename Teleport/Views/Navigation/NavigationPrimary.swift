@@ -21,7 +21,7 @@ struct NavigationPrimary: View {
             HStack {
                 SearchBar(searchTerm: $searchTerm)
                 Button(action: {
-                    viewModel.openFile()
+                    self.viewModel.openFile()
                 }) {
                     Image("plus")
                         .resizable()

@@ -25,7 +25,7 @@ struct NavigationDetail: View {
         }
         .frame(minWidth: 500, minHeight: 400)
         .onDisappear {
-            player.state = .stopped
+            self.player.state = .stopped
         }
     }
     

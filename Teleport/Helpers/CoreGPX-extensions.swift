@@ -5,6 +5,7 @@
 //  Created by Cameron Deardorff on 7/3/20.
 //
 
+import CoreLocation
 import Foundation
 import CoreGPX
 
