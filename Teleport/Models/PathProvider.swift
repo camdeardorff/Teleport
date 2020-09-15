@@ -30,7 +30,7 @@ struct PathSimulationProvider: Identifiable, Hashable {
     var id: UUID = UUID()
     var name: String { pathProvider.name }
     var path: [CLLocation] { pathProvider.path }
-    var title: String { pathProvider.title ?? "" }
+    var title: String { pathProvider.title ?? pathProvider.name }
     var description: String { pathProvider.description ?? "" }
     
     static func == (lhs: PathSimulationProvider, rhs: PathSimulationProvider) -> Bool {
