@@ -14,6 +14,11 @@ struct PathRow: View {
         VStack(alignment: .leading) {
             Text(path.title)
                 .fontWeight(.bold)
+            if path.title != path.name {
+                Text(path.name)
+                    .font(.caption)
+                    .opacity(0.9)
+            }
             Text(path.description)
                 .font(.caption)
                 .opacity(0.625)
