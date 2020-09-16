@@ -12,16 +12,20 @@ struct PathRow: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(path.title)
-                .fontWeight(.bold)
-            if path.title != path.name {
-                Text(path.name)
-                    .font(.caption)
-                    .opacity(0.9)
+            HStack(spacing: 2) {
+                Text(path.title)
+                    .fontWeight(.bold)
+                if path.title != path.name {
+                    Text("(\(path.name))")
+                        .font(.caption)
+                        .opacity(0.9)
+                }
             }
-            Text(path.description)
-                .font(.caption)
-                .opacity(0.625)
+            if !path.description.isEmpty {
+                Text(path.description)
+                    .font(.caption)
+                    .opacity(0.625)
+            }
         }
         .padding(.vertical, 4)
     }
