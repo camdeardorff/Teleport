@@ -14,9 +14,9 @@ struct PathList: View {
     var body: some View {
         List {
             ForEach(pathsViewModel.items) { path in
-                if filterTerm == ""
-                    || path.title.lowercased().contains(filterTerm.lowercased())
-                    || path.description.lowercased().contains(filterTerm.lowercased()){
+                if self.filterTerm == ""
+                    || path.title.lowercased().contains(self.filterTerm.lowercased())
+                    || path.description.lowercased().contains(self.filterTerm.lowercased()){
 
                     NavigationLink(destination:
                         NavigationDetail(path: path)
@@ -25,9 +25,9 @@ struct PathList: View {
                     }
                     .contextMenu {
                         Button(action: {
-                            guard let index = pathsViewModel.items.firstIndex(of: path) else { return }
-                            let url = pathsViewModel.items[index].pathProvider.url
-                            pathsViewModel.removePaths(with: [url])
+                            guard let index = self.pathsViewModel.items.firstIndex(of: path) else { return }
+                            let url = self.pathsViewModel.items[index].pathProvider.url
+                            self.pathsViewModel.removePaths(with: [url])
                         }) {
                             Text("Delete")
                         }
