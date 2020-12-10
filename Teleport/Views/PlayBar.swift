@@ -27,7 +27,7 @@ struct PlayBar: View {
             Button(action: {
                 self.loop = self.loop.toggle
             }) {
-                loop.text
+                loop.actionText
                     .font(.headline)
                     .padding(.all, 8)
             }.buttonStyle(BorderlessButtonStyle())

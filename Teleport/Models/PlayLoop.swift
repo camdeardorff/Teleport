@@ -8,10 +8,8 @@
 import Foundation
 import SwiftUI
 
-// associated value corresponds to the delay between location changes.
-// this should be changed such that it is a measure of distance covered
-// over the course of the same period of time.
-// would require interpolation of points.
+/// Simply a toggle for tracking if we should be looping or not.
+/// Note that the `text` property does not reflect the current state, but the action
 enum PlayLoop: Double, CaseIterable {
     case loop
     case notLooped
@@ -25,7 +23,7 @@ enum PlayLoop: Double, CaseIterable {
         }
     }
 
-    var text: some View {
+    var actionText: some View {
         var t: Text
         switch self {
         case .loop:
