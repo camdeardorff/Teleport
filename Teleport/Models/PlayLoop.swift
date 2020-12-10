@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 /// Simply a toggle for tracking if we should be looping or not.
-/// Note that the `text` property does not reflect the current state, but the action
+/// Note that the `actionText` property does not reflect the current state, but the action
 enum PlayLoop: Double, CaseIterable {
     case loop
     case notLooped
@@ -23,6 +23,7 @@ enum PlayLoop: Double, CaseIterable {
         }
     }
 
+    /// What the new state will be when you toggle the current state.
     var actionText: some View {
         var t: Text
         switch self {
