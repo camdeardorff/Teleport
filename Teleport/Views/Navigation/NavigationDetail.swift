@@ -21,7 +21,8 @@ struct NavigationDetail: View {
             Divider()
             PlayBar(
                 state: $player.state,
-                speed: $player.speed)
+                speed: $player.speed,
+                loop: $player.loop)
         }
         .frame(minWidth: 500, minHeight: 400)
         .onDisappear {
