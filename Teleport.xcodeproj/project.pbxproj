@@ -41,6 +41,7 @@
 		15BBD845250D6C53001C3AB7 /* GPXFilesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BBD844250D6C53001C3AB7 /* GPXFilesController.swift */; };
 		15DE8B9F24CF40830084B421 /* PlaySpeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DE8B9E24CF40830084B421 /* PlaySpeed.swift */; };
 		15DE8BA124CF40AE0084B421 /* PlayState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DE8BA024CF40AE0084B421 /* PlayState.swift */; };
+		36A294F525829B21001FE581 /* PlayLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A294F425829B21001FE581 /* PlayLoop.swift */; };
 		81AC768699FF7549555FE216 /* Pods_Teleport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CCADBF86192F7037C82D85B /* Pods_Teleport.framework */; };
 		9A5C0C70F9E25A4D35CA1B39 /* Pods_TeleportTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011BC5EAAF925EA6F910FA44 /* Pods_TeleportTests.framework */; };
 /* End PBXBuildFile section */
@@ -96,6 +97,7 @@
 		15BBD844250D6C53001C3AB7 /* GPXFilesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXFilesController.swift; sourceTree = "<group>"; };
 		15DE8B9E24CF40830084B421 /* PlaySpeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySpeed.swift; sourceTree = "<group>"; };
 		15DE8BA024CF40AE0084B421 /* PlayState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayState.swift; sourceTree = "<group>"; };
+		36A294F425829B21001FE581 /* PlayLoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayLoop.swift; sourceTree = "<group>"; };
 		7A88AAFF0586BF299C3FF345 /* Pods-TeleportTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeleportTests.debug.xcconfig"; path = "Target Support Files/Pods-TeleportTests/Pods-TeleportTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8CCADBF86192F7037C82D85B /* Pods_Teleport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teleport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0BA2D78CEEC65DEC2F24444 /* Pods-TeleportTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeleportTests.release.xcconfig"; path = "Target Support Files/Pods-TeleportTests/Pods-TeleportTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				15DE8BA024CF40AE0084B421 /* PlayState.swift */,
 				153FE0CD250D198500254C9E /* PathsViewModel.swift */,
 				153FE0CF250D1A8300254C9E /* PathProvider.swift */,
+				36A294F425829B21001FE581 /* PlayLoop.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 				158B9D8824B1620C00125A33 /* PathSimulationPlayer.swift in Sources */,
 				15BBD845250D6C53001C3AB7 /* GPXFilesController.swift in Sources */,
 				15442C3A24AD5223004570F8 /* CoordinateFrame.swift in Sources */,
+				36A294F525829B21001FE581 /* PlayLoop.swift in Sources */,
 				150D194924AA37B700E38DF2 /* ContentView.swift in Sources */,
 				1534663824B6227800102A7A /* Simulator.swift in Sources */,
 				15442C2B24AD2A0D004570F8 /* NavigationPrimary.swift in Sources */,
@@ -625,7 +629,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Teleport/Preview Content\"";
-				DEVELOPMENT_TEAM = CU74U85Q8E;
+				DEVELOPMENT_TEAM = V2J539W4TS;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Teleport/Info.plist;
@@ -650,7 +654,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Teleport/Preview Content\"";
-				DEVELOPMENT_TEAM = CU74U85Q8E;
+				DEVELOPMENT_TEAM = V2J539W4TS;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Teleport/Info.plist;

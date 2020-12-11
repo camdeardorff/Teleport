@@ -14,6 +14,8 @@ class PathSimulationPlayer: ObservableObject {
         
     private var locationIndex: Int? = nil
     private var timer: RepeatingTimer? = nil
+
+    @Published var loop: PlayLoop = .notLooped
     
     @Published var speed: PlaySpeed = .fast {
         didSet {
@@ -27,17 +29,21 @@ class PathSimulationPlayer: ObservableObject {
                 timer = RepeatingTimer(timeInterval: speed.rawValue)
                 timer?.eventHandler = { [weak self] in
                     DispatchQueue.main.async { [weak self] in
-                        guard let strongSelf = self else { return }
-                        let idx = strongSelf.locationIndex ?? 0
-                        
-                        guard (0..<strongSelf.path.count).contains(idx) else {
-                            strongSelf.timer = nil
-                            strongSelf.state = .stopped
+                        guard let self = self else { return }
+
+                        if self.loop == .loop, let index = self.locationIndex, index >= self.path.count {
+                            self.locationIndex = 0
+                        }
+
+                        let index = self.locationIndex ?? 0
+                        guard (0..<self.path.count).contains(index) else {
+                            self.timer = nil
+                            self.state = .stopped
                             return
                         }
                         
-                        strongSelf.currentLocation = strongSelf.path[idx]
-                        strongSelf.locationIndex = (self?.locationIndex ?? 0) + 1
+                        self.currentLocation = self.path[index]
+                        self.locationIndex = index + 1
                     }
                 }
                 timer?.resume()
